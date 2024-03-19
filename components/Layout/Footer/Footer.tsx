@@ -15,40 +15,40 @@ const Footer = () => {
                     <div className={styles.footer__left}>
                         {isMobile725 && <SocialList marginBottom={25} />}
                         <Logo marginBottom={44} />
-                        <p className={styles.footer__copyright}>© 2010-2021 <br />«Иван»</p>
+                        <p className={styles.footer__copyright}>© 1990-Still <br />«Aleksander»</p>
                     </div>
                     <div className={styles.footer__right}>
                         <div className={styles.footer__right__top}>
-                            <p className={styles.footer__right__top__text}>Поделитесь сайтом с друзьями:</p>
+                            <p className={styles.footer__right__top__text}>Jaga saiti oma sõpradega:</p>
                             {!isMobile725 && <SocialList />}
                         </div>
                         <div className={styles.footer__right__bottom}>
                             <ul className={styles.footer__list}>
                                 <li className={styles.footer__list__item}>
-                                    <Link href="/cookie-policy" legacyBehavior>
-                                        <a className={styles.footer__list__item__link}>
-                                            Политика использования файлов cookie
-                                        </a>
-                                    </Link>
-                                </li>
-                                <li className={styles.footer__list__item}>
-                                    <Link href="/privacy-policy" legacyBehavior>
-                                        <a className={styles.footer__list__item__link}>
-                                            Политика конфиденциальности
-                                        </a>
-                                    </Link>
-                                </li>
-                                <li className={styles.footer__list__item}>
                                     <Link href="/personal-data-policy" legacyBehavior>
                                         <a className={styles.footer__list__item__link}>
-                                            Политика обработки персональных данных
+                                        Failide kasutamise poliitika cookie
                                         </a>
                                     </Link>
                                 </li>
                                 <li className={styles.footer__list__item}>
                                     <Link href="/personal-data-of-clients" legacyBehavior>
                                         <a className={styles.footer__list__item__link}>
-                                            Согласие на обработку персональных данных клиентов - физических лиц
+                                        Privaatsuspoliitika
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className={styles.footer__list__item}>
+                                    <Link href="/personal-data-policy" legacyBehavior>
+                                        <a className={styles.footer__list__item__link}>
+                                        Isikuandmete töötlemise poliitika
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className={styles.footer__list__item}>
+                                    <Link href="/personal-data-of-clients" legacyBehavior>
+                                        <a className={styles.footer__list__item__link}>
+                                        Nõusolek klientide isikuandmete töötlemiseks - üksikisikud
                                         </a>
                                     </Link>
                                 </li>

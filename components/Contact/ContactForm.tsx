@@ -20,10 +20,10 @@ const ContactForm = () => {
         emailjs.sendForm('service_eo3cq17', 'template_qbdc3ef', formRef.current, 'KGhm8GCb7j8cV0sVC')
         .then(result => {
             setSpinner(false);
-            toast(`Данные отправлены ${result.text}`);
+            toast(`Saadetud andmed ${result.text}`);
         }, error => {
             setSpinner(false);
-            toast.error(`Данные отправлены ${error.text}`);
+            toast.error(`Saadetud andmed ${error.text}`);
         })
 
         formRef.current.reset();
@@ -33,26 +33,26 @@ const ContactForm = () => {
     return (
         <form onSubmit={sendEmail} className={styles.contact__form} ref={formRef}>
             <ContactInput
-                text="Ф.И.О.*"
-                placeholder="Укажите ваши Ф.И.О."
+                text="Eesnimi ja Perekonnanimi*"
+                placeholder="Täpsustage oma nimi"
                 type="text"
                 name='fullName'
             />
             <ContactInput
-                text="Должность/компания"
-                placeholder="Укажите вашу должность/компанию"
+                text="Ametikoht/ettevõte"
+                placeholder="Märkige oma ametikoht/ettevõte"
                 type="text"
                 name='company'
             />
             <ContactInput
                 text="E-mail*"
-                placeholder="Укажите ваш E-mail"
+                placeholder="Palun sisestage oma E-post"
                 type="email"
                 name='email'
             />
             <ContactInput
-                text="Телефон*"
-                placeholder="Укажите ваш телефон"
+                text="Telefon*"
+                placeholder="Sisestage oma telefoninumber"
                 type="tel"
                 name='phone'
             />
@@ -60,7 +60,7 @@ const ContactForm = () => {
                 className={styles.contact__form__btn}
                 disabled={!acceptWithRules}
             >
-                {spinner ? <PropagateLoader color="#fff" /> : 'Отправить заявку'}
+                {spinner ? <PropagateLoader color="#fff" /> : 'Saada teade'}
             </button>
             <label className={styles.contact__checkbox}>
                 <input
@@ -69,7 +69,8 @@ const ContactForm = () => {
                     onChange={toggleAcceptWithRules}
                 />
                 <span className={styles.contact__checkbox__span} />
-                <span className={styles.contact__checkbox__text}>Нажимая на кнопку «Отправить заявку», я соглашаюсь с <Link href='/privacy-policy' passHref legacyBehavior><a className={styles.contact__checkbox__link}>Политикой конфиденциальности</a></Link> и даю <Link legacyBehavior href='/personal-data-of-clients' passHref><a className={styles.contact__checkbox__link}>Согласие на обработку персональных данных.</a></Link></span>
+                <span className={styles.contact__checkbox__text}>Vajutades nupule "Avalduse esitamine" nõustun järgmisega 
+                <Link href='/personal-data-of-clients' passHref legacyBehavior><a className={styles.contact__checkbox__link}>Privaatsuspoliitika</a></Link> ja mina annan <Link legacyBehavior href='/personal-data-of-clients' passHref><a className={styles.contact__checkbox__link}>Nõusolek isikuandmete töötlemiseks.</a></Link></span>
             </label>
         </form>
     );

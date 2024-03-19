@@ -47,7 +47,7 @@ const Header = () => {
                                 className={styles.header__nav__list__item__link}
                                 onClick={closeMenu}
                             >
-                                Обо мне
+                                Minust
                             </Link>
                         </li>
                         <li className={currentMenuItemClass}>
@@ -61,7 +61,7 @@ const Header = () => {
                                 className={styles.header__nav__list__item__link}
                                 onClick={closeMenu}
                             >
-                                Навыки
+                                 Oskused
                             </Link>
                         </li>
                         <li className={currentMenuItemClass}>
@@ -75,7 +75,7 @@ const Header = () => {
                                 className={styles.header__nav__list__item__link}
                                 onClick={closeMenu}
                             >
-                                Портфолио
+                                Portfolio
                             </Link>
                         </li>
                         <li className={currentMenuItemClass}>
@@ -89,7 +89,7 @@ const Header = () => {
                                 className={styles.header__nav__list__item__link}
                                 onClick={closeMenu}
                             >
-                                Обратная связь
+                                Tagasiside
                             </Link>
                         </li>
                     </ul>

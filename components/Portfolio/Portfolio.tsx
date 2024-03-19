@@ -47,16 +47,16 @@ const Portfolio = () => {
     }
 
     const portfolioTabControls = [
-        { id: 1, title: 'Веб-сайты', isActive: portfolioTab1, handler: handleShowPortfolioItems1 },
-        { id: 2, title: 'UI/UX дизайн', isActive: portfolioTab2, handler: handleShowPortfolioItems2 },
-        { id: 3, title: 'Внешний интерфейс', isActive: portfolioTab3, handler: handleShowPortfolioItems3 },
-        { id: 4, title: 'Все проекты', isActive: portfolioTab4, handler: handleShowPortfolioItems4 },
+        { id: 1, title: 'Tunnistussed', isActive: portfolioTab1, handler: handleShowPortfolioItems1 },
+        { id: 2, title: 'Töökogemus', isActive: portfolioTab2, handler: handleShowPortfolioItems2 },
+        { id: 3, title: 'Suured projektid', isActive: portfolioTab3, handler: handleShowPortfolioItems3 },
+        { id: 4, title: 'Muu..', isActive: portfolioTab4, handler: handleShowPortfolioItems4 },
     ];
 
     return (
         <section className={styles.portfolio} id="portfolio">
             <div className="container">
-                <MainTitle text='портфолио' />
+                <MainTitle text='Oskused' />
             </div>
             <div className="sub-container">
                 <div className={styles.portfolio__inner}>

@@ -47,10 +47,10 @@ const Hero = () => {
         >
             <div className='sub-container'>
                 <div className={styles.hero__inner}>
-                    <h1 className={styles.hero__title} ref={heroTitle}>Web development</h1>
+                    <h1 className={styles.hero__title} ref={heroTitle}>Elektriinsener – 8. tase</h1>
                     <div className={styles.hero__description}>
-                        <p>Вы работаете над чем-то великим?</p>
-                        <p>Я с удовольствием помогу вам в этом! Напишите мне письмо и мы начнем проект прямо сейчас!</p>
+                        <p>Kas te töötate millegi suurepärase kallal?</p>
+                        <p>Ma aitaksin teid väga hea meelega! Kirjutage mulle e-kirja ja me alustame projekti kohe! </p>
                     </div>
                     <Link
                         to='contact'
@@ -60,7 +60,7 @@ const Hero = () => {
                         duration={500}
                         className={styles.hero__btn}
                     >
-                        Связаться с разработчиком
+                        Võtke ühendust inseneriga
                     </Link>
                     {!isMobile800 && <Link
                         to='about'

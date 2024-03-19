@@ -11,13 +11,13 @@ const About = () => {
     return (
         <section className={styles.about } id='about'>
             <div className="container">
-                <MainTitle text='обо мне' />
+                <MainTitle text='Minust' />
             </div>
             <div className={`sub-container ${styles.about__sub_container}`}>
                 <img className={styles.about__img} src="/img/about.png" alt="avatar" />
                 <div className={styles.about__inner}>
                     <h3 className={styles.about__title}>
-                        Иван Иванов
+                    Aleksander Les
                         <span className={styles.about__title__border}>
                             <span className={styles.about__title__border__arrow}>
                                 <ArrowSvg />
@@ -27,11 +27,14 @@ const About = () => {
                     </h3>
                     <div className={styles.about__text}>
                         <p>
-                            PРасположенный в Хартфорде, штат Коннектикут. 
-                            В настоящее время я работаю по совместительству Удаленным младшим веб-разработчиком для Coolor, расположенного в Лас-Вегасе.
+                        Kui juhtiv insener seitsmendas kategoorias, spetsialiseerun elektro- ja mikroskeemilistele töödele ning omades A-pädevust elektroonikatöödes, olen keskendunud professionaalsetele saavutustele elektrotehnikas.
                         </p>
                         <p>
-                            Я ищу, чтобы взять на себя больше работы и повысить свои навыки в качестве веб-разработчика.
+                        Olen juhtinud mitmekülgseid elektrotöid, alates projekteerimisest ja paigaldamisest kuni hoolduse ja seadistamiseni. 
+                        Minu spetsialiseerumine hõlmab täpset tööd mikroskeemide ja elektroonikakomponentidega.
+
+Otsin pidevalt võimalusi professionaalseks arenguks, jälgides elektrotehnika uusimaid tehnoloogiaid ja meetodeid. 
+Minu eesmärk on luua innovaatilisi lahendusi, mis parandavad elektroonikaseadmete tõhusust ja usaldusväärsust.
                         </p>
                     </div>
                     {!isMobile1080 && <SocialList />}

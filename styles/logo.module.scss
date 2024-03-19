@@ -1,8 +1,10 @@
 .logo {
     cursor: pointer;
+    width: 130px; /* Uus laiuse väärtus */
+    height: 40px; /* Uus kõrguse väärtus */
 
-    @media all and (max-width: 800px) {
-        width: 64px;
-        height: 30px;
+    @media all and (max-width: 11000px) {
+        width: 100px; /* Laiuse väärtus, kui maksimaalne laius on 11000 pikslit */
+        height: 40px; /* Kõrguse väärtus, kui maksimaalne laius on 11000 pikslit */
     }
 }

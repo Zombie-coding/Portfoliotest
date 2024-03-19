@@ -6,28 +6,28 @@ const Skills = () => {
     return (
         <section className={styles.skills} id="skills">
             <div className="container">
-                <MainTitle text='навыки' />
+                <MainTitle text=' Oskused' />
             </div>
             <div className="sub-container">
                 <ul className={styles.skills__list}>
                     <SkillsItem
-                        title='Веб-Разработка'
-                        text='Javascript, Coffeescript, JAVA, Python, PHP, Go, Node.js, MongoDB, Redis, PostgreSQL, WebStorm.'
+                        title='Kõrgepinge'
+                        text='Olen spetsialiseerunud Kõrgepinge valdkonnale, mille raames omandasin üle 7 aasta kogemusi ning osalesin mitmetes projektides.'
                         iconClass={styles.skills__web}
                     />
                     <SkillsItem
-                        title='UI/UX Дизайн'
-                        text='Photoshop, Illustrator, Sketch, Axure, XMind, Прототипирование, Wireframing, Исследование Пользователей, Юзабилити-Тестирование'
+                        title='Päikesepaneelid'
+                        text='Minu erialane fookus on päikesepaneelide valdkonnas, kus olen töötanud üle 4 aasta ning osalenud mitmetes olulistes projektides.'
                         iconClass={styles.skills__ux}
                     />
                     <SkillsItem
-                        title='Разработка Frontend'
-                        text='HTML, CSS, LESS, SASS, Bootstrap, Wordpress, Drupal, Phonegap / Cordova, Ionic, Foundation, Angular.js.'
+                        title='Tuulegeneraatorit'
+                        text='Minu erialane fookus on tuulegeneraatorite paigaldamise ja hoolduse valdkonnas, samuti elektriliste abaronide ja mikrolülituste paigaldamise ning hoolduse alal, milles olen tegutsenud üle 5 aasta ja osalenud mitmetes olulistes projektides.'
                         iconClass={styles.skills__front}
                     />
                     <SkillsItem
-                        title='Консалтинг и SEO-Аудит'
-                        text='Screaming Frog, Woorank, Raventools, Semrush, Moz, WebCEO, Google Analytics, ChartBeat, CrazyEgg.'
+                        title='Liini toetus'
+                        text='Minu töökogemus hõlmab toetuste paigaldamist ja tõmbamist vahemikus 0,4 kuni 10 kilovatti võimsusega seadmetele.'
                         iconClass={styles.skills__seo}
                     />
                 </ul>
