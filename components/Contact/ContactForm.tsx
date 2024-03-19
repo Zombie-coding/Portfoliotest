@@ -13,7 +13,7 @@ const ContactForm = () => {
 
     const toggleAcceptWithRules = () => setAcceptWithRules(!acceptWithRules);
 
-    const sendEmail = (e: React.MouseEvent<HTMLButtonElement>) => { // изменение типа события
+    const sendEmail = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
 
         setSpinner(true);
@@ -30,8 +30,13 @@ const ContactForm = () => {
         setAcceptWithRules(false);
     }
 
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        // Ваша логика обработки отправки формы
+    }
+
     return (
-        <form onSubmit={sendEmail} className={styles.contact__form} ref={formRef}>
+        <form onSubmit={handleSubmit} className={styles.contact__form} ref={formRef}>
             <ContactInput
                 text="Eesnimi ja Perekonnanimi*"
                 placeholder="Täpsustage oma nimi"
