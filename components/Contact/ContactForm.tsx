@@ -32,7 +32,7 @@ const ContactForm = () => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        // Ваша логика обработки отправки формы
+        // Дополнительная логика, если нужно
     }
 
     return (
