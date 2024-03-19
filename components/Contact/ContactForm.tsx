@@ -13,7 +13,7 @@ const ContactForm = () => {
 
     const toggleAcceptWithRules = () => setAcceptWithRules(!acceptWithRules);
 
-    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    const sendEmail = (e: React.MouseEvent<HTMLButtonElement>) => { // изменение типа события
         e.preventDefault();
 
         setSpinner(true);
