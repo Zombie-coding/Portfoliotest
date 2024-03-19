@@ -1,4 +1,5 @@
 import styles from '../../../styles/socialListFooter.module.scss';
+import Image from 'next/image'; // Импортируем компонент изображения из next/image
 
 const SocialList = ({ marginBottom }: { marginBottom?: number }) => (
     <ul className={styles.social__list} style={{ marginBottom }}>
@@ -6,7 +7,7 @@ const SocialList = ({ marginBottom }: { marginBottom?: number }) => (
             <a href="#" className={styles.social__list__item__link}>
                 <span className={styles.social__list__item__link__text}>facebook</span>
                 <span className={`${styles.social__list__item__link__icon} ${styles.social__list__item__link__icon__fb}`}>
-                    <img className={styles.social__list__item__link__img} src="/img/facebook.svg" alt="facebook" />
+                    <Image src="/img/facebook.svg" alt="facebook" width={20} height={20} /> {/* Используем компонент Image */}
                 </span>
             </a>
         </li>

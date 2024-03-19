@@ -57,8 +57,10 @@ const ContactForm = () => {
                 name='phone'
             />
             <button
+                type="button"
                 className={styles.contact__form__btn}
                 disabled={!acceptWithRules}
+                onClick={sendEmail}
             >
                 {spinner ? <PropagateLoader color="#fff" /> : 'Saada teade'}
             </button>
