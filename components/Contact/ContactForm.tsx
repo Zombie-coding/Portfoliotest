@@ -71,7 +71,7 @@ const ContactForm = () => {
                     onChange={toggleAcceptWithRules}
                 />
                 <span className={styles.contact__checkbox__span} />
-                <span className={styles.contact__checkbox__text}>Vajutades nupule "Avalduse esitamine" nõustun järgmisega 
+                <span className={styles.contact__checkbox__text}>Vajutades nupule &quot;Avalduse esitamine&quot; nõustun järgmisega 
                 <Link href='/personal-data-of-clients' passHref legacyBehavior><a className={styles.contact__checkbox__link}>Privaatsuspoliitika</a></Link> ja mina annan <Link legacyBehavior href='/personal-data-of-clients' passHref><a className={styles.contact__checkbox__link}>Nõusolek isikuandmete töötlemiseks.</a></Link></span>
             </label>
         </form>
