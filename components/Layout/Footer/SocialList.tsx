@@ -7,7 +7,7 @@ const SocialList = ({ marginBottom }: { marginBottom?: number }) => (
             <a href="#" className={styles.social__list__item__link}>
                 <span className={styles.social__list__item__link__text}>facebook</span>
                 <span className={`${styles.social__list__item__link__icon} ${styles.social__list__item__link__icon__fb}`}>
-                    <Image src="/img/facebook.svg" alt="facebook" width={20} height={20} /> {/* Используем компонент Image */}
+                    <Image src="/img/facebook.svg" alt="facebook" width={20} height={20} /> {/* Заменяем <img> на <Image /> */}
                 </span>
             </a>
         </li>
