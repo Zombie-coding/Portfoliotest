@@ -58,6 +58,7 @@ const ContactForm = () => {
             <ContactInput
                 text="Telefon*"
                 placeholder="Sisestage oma telefoninumber"
+                
                 type="tel"
                 name='phone'
             />

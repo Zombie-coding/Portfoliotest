@@ -47,7 +47,7 @@ const Hero = () => {
         >
             <div className='sub-container'>
                 <div className={styles.hero__inner}>
-                    <h1 className={styles.hero__title} ref={heroTitle}>Elektriinsener 8T</h1>
+                    <h1 className={styles.hero__title} ref={heroTitle}>Elektriinsener 7T</h1>
                     <div className={styles.hero__description}>
                         <p>Kas te töötate millegi suurepärase kallal?</p>
                         <p>Ma aitaksin teid väga hea meelega! Kirjutage mulle e-kirja ja me alustame projekti kohe! </p>
